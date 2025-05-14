@@ -19,7 +19,7 @@ class GalleryImageViewWrapper extends StatefulWidget {
   final bool showAppBar;
   final bool closeWhenSwipeUp;
   final bool closeWhenSwipeDown;
-  final List<Widget> appBarActions
+  final List<Widget> appBarActions;
 
   const GalleryImageViewWrapper({
     Key? key,
