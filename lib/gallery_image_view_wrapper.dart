@@ -37,7 +37,7 @@ class GalleryImageViewWrapper extends StatefulWidget {
     required this.showAppBar,
     required this.closeWhenSwipeUp,
     required this.closeWhenSwipeDown,
-    this.appBarActions = []
+    required this.appBarActions,
   }) : super(key: key);
 
   @override
