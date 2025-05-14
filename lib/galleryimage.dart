@@ -29,6 +29,7 @@ class GalleryImage extends StatefulWidget {
   final bool showAppBar;
   final bool closeWhenSwipeUp;
   final bool closeWhenSwipeDown;
+  final List<Widget> appBarActions;
 
   const GalleryImage({
     Key? key,
@@ -53,6 +54,7 @@ class GalleryImage extends StatefulWidget {
     this.showAppBar = true,
     this.closeWhenSwipeUp = false,
     this.closeWhenSwipeDown = false,
+    this.appBarActions = []
   })  : assert(numOfShowImages <= imageUrls.length),
         super(key: key);
   @override
@@ -160,6 +162,7 @@ class _GalleryImageState extends State<GalleryImage> {
           closeWhenSwipeUp: widget.closeWhenSwipeUp,
           closeWhenSwipeDown: widget.closeWhenSwipeDown,
           radius: widget.imageRadius,
+          appBarActions : appBarActions
         ),
       ),
     );
