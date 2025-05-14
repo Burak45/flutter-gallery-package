@@ -54,7 +54,7 @@ class GalleryImage extends StatefulWidget {
     this.showAppBar = true,
     this.closeWhenSwipeUp = false,
     this.closeWhenSwipeDown = false,
-    this.appBarActions = []
+    this.appBarActions = [],
   })  : assert(numOfShowImages <= imageUrls.length),
         super(key: key);
   @override
