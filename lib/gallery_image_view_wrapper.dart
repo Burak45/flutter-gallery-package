@@ -19,6 +19,7 @@ class GalleryImageViewWrapper extends StatefulWidget {
   final bool showAppBar;
   final bool closeWhenSwipeUp;
   final bool closeWhenSwipeDown;
+  final List<Widget> appBarActions
 
   const GalleryImageViewWrapper({
     Key? key,
@@ -36,6 +37,7 @@ class GalleryImageViewWrapper extends StatefulWidget {
     required this.showAppBar,
     required this.closeWhenSwipeUp,
     required this.closeWhenSwipeDown,
+    this.appBarActions = []
   }) : super(key: key);
 
   @override
@@ -72,6 +74,7 @@ class _GalleryImageViewWrapperState extends State<GalleryImageViewWrapper> {
       appBar: widget.showAppBar
           ? AppBar(
               title: Text(widget.titleGallery ?? "Gallery"),
+            appBarActions: appBarActions
             )
           : null,
       backgroundColor: widget.backgroundColor,
